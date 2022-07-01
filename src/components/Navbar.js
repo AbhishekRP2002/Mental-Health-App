@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { SidebarData } from './SidebarData';
 import './Navbar.css';
 import { IconContext } from 'react-icons';
-
+import logo from "./images/logo_mh.svg";
 
 function Navbar() {
   const [sidebar, setSidebar] = useState(false);
@@ -19,16 +19,15 @@ function Navbar() {
           <Link to='#' className='menu-bars'>
             <FaIcons.FaBars onClick={showSidebar} />
           </Link>
-        <a className="logo " href="/home">
-         Logo
-    
-        </a>
-       
-        
+        <Link className="logo" to="/home">
+         <img src={logo} alt="" />
+        </Link>
+
+
         <button className='btn create'>Create Account</button>
         </div>
 
-       
+
         <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
           <ul className='nav-menu-items' onClick={showSidebar}>
             <li className='navbar-toggle'>
@@ -36,7 +35,7 @@ function Navbar() {
                 <AiIcons.AiOutlineClose />
               </Link>
             </li>
-     
+
 
             {SidebarData.map((item, index) => {
               return (
@@ -48,11 +47,11 @@ function Navbar() {
                 </li>
               );
             })}
-           
+
 
           </ul>
 
-          
+
         </nav>
       </IconContext.Provider>
     </>

@@ -4,14 +4,12 @@
   background-color: #000;
   height: 80px;
   display: flex;
-  justify-content: start;
   align-items: center;
+  position: relative;
 }
 
 .logo{
-  background: url("/images/logo_mh.svg") no-repeat; 
-  width: 50px; 
-  height:50px; 
+  margin: auto 20px;
 }
 
 button,
@@ -31,7 +29,8 @@ button,
 }
 
 .create {
-  margin-left: 72%;
+  position: absolute;
+  right: 20px;
   background-color: #153af7;
   color: white;
   border: 1px solid #153af7;
@@ -108,3 +107,4 @@ button,
 span {
   margin-left: 16px;
 }
+

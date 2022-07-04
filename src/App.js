@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
-import Navbar from './components/Navbar';
+import Navbar from './components/Navbar.js';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import ChatSpace from './pages/ChatSpace';
-import AboutUs from './pages/AboutUs';
-import LogIn from './pages/LogIn';
-import BookAppointment from './pages/BookAppointment';
+import Home from './pages/Home/Home.js';
+import ChatSpace from './pages/ChatSpace/ChatSpace.js';
+import AboutUs from './pages/AboutUs/AboutUs.js';
+import LogIn from './pages/Login/LogIn.js';
+import BookAppointment from './pages/BookAppointment/BookAppointment.js';
 import Footer from './pages/Footer';
 
 function App() {

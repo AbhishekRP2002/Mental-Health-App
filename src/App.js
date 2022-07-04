@@ -7,6 +7,7 @@ import ChatSpace from './pages/ChatSpace';
 import AboutUs from './pages/AboutUs';
 import LogIn from './pages/LogIn';
 import BookAppointment from './pages/BookAppointment';
+import Footer from './pages/Footer';
 
 function App() {
   return (
@@ -19,7 +20,10 @@ function App() {
           <Route path='/aboutus' component={AboutUs} />
           <Route path='/sign-up' component={LogIn} />
           <Route path='/book-appointment' component={BookAppointment} />
+         
         </Switch>
+
+        <Footer/>
       </Router>
     </>
   );

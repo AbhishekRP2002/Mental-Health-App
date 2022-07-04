@@ -17,7 +17,7 @@ export const SidebarData = [
     cName: 'nav-text'
   },
   {
-    title: 'Your Safe Space',
+    title: " It's OK to Share !",
     path: '/chatspace',
     icon: <IoIcons.IoMdChatbubbles />,
     cName: 'nav-text'

@@ -8,36 +8,36 @@ export const SidebarData = [
     title: 'Home',
     path: '/',
     icon: <AiIcons.AiFillHome />,
-    cName: 'nav-text'
+    cName: 'navi-text'
   },
   {
     title: 'About Us',
     path: '/aboutus',
     icon: <IoIcons.IoIosPaper />,
-    cName: 'nav-text'
+    cName: 'navi-text'
   },
   {
     title: " It's OK to Share !",
     path: '/chatspace',
     icon: <IoIcons.IoMdChatbubbles />,
-    cName: 'nav-text'
+    cName: 'navi-text'
   },
   {
     title: 'Book Appointment',
     path: '/book-appointment',
     icon: <FaIcons.FaHandsHelping />,
-    cName: 'nav-text'
+    cName: 'navi-text'
   },
   {
     title: 'Log In',
     path: '/login',
     icon: <AiIcons.AiOutlineLogin />,
-    cName: 'nav-text'
+    cName: 'navi-text'
   },
   {
     title: 'Support',
     path: '/support',
     icon: <IoIcons.IoMdHelpCircle />,
-    cName: 'nav-text'
+    cName: 'navi-text'
   }
 ];

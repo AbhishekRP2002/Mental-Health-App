@@ -2,11 +2,11 @@ import React from 'react';
 import './App.css';
 import Navbar from './components/Navbar.js';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Home from './pages/Home/Home.js';
-import ChatSpace from './pages/ChatSpace/ChatSpace.js';
-import AboutUs from './pages/AboutUs/AboutUs.js';
-import LogIn from './pages/Login/LogIn.js';
-import BookAppointment from './pages/BookAppointment/BookAppointment.js';
+import Home from './pages/Home.js';
+import ChatSpace from './pages/ChatSpace.js';
+import AboutUs from './pages/AboutUs.js';
+import LogIn from './pages/LogIn.js';
+import BookAppointment from './pages/BookAppointment.js';
 import Footer from './pages/Footer';
 
 function App() {

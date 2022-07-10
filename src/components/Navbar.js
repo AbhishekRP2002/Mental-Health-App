@@ -15,7 +15,7 @@ function Navbar() {
   return (
     <>
       <IconContext.Provider value={{ color: '#fff' }}>
-        <div className='navbar'>
+        <div className='navibar'>
           <Link to='#' className='menu-bars'>
             <FaIcons.FaBars onClick={showSidebar} />
           </Link>
@@ -24,13 +24,13 @@ function Navbar() {
         </Link>
 
 
-        <button className='btn create'>Create Account</button>
+        <button className='btn btn-primary create'>Create Account</button>
         </div>
 
 
-        <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
-          <ul className='nav-menu-items' onClick={showSidebar}>
-            <li className='navbar-toggle'>
+        <navi className={sidebar ? 'navi-menu active' : 'navi-menu'}>
+          <ul className='navi-menu-items' onClick={showSidebar}>
+            <li className='navibar-toggle'>
               <Link to='#' className='menu-bars'>
                 <AiIcons.AiOutlineClose />
               </Link>
@@ -52,7 +52,7 @@ function Navbar() {
           </ul>
 
 
-        </nav>
+        </navi>
       </IconContext.Provider>
     </>
   );

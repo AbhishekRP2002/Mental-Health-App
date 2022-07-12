@@ -1,0 +1,31 @@
+.big-heading{
+    font-weight: 900;
+    font-size: 3.5rem;
+    line-height: 1.2;
+}
+.container-fluid{
+    padding: 10% 10% 7%;
+}  
+.topContainer  {
+    background-color: #F2BA2C;
+}
+.topContainer img {
+    width: 200px;
+    height: 200px;
+}
+.topContainer p {
+    padding:30px 0 0;
+}
+.topContainer .btn {
+   margin: 50px 30px;
+   border-radius: 10px;
+}
+
+#pricing{
+    text-align: center;
+    padding: 7% 15%;
+}
+.pricing-column{
+    padding: 35px;
+}
+  

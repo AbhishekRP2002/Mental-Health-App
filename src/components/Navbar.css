@@ -35,6 +35,7 @@ button,
 .create {
   position: absolute;
   right: 20px;
+  bottom: 20px;
   background-color: #153af7;
   color: white;
   border: 1px solid #153af7;

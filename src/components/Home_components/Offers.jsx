@@ -3,70 +3,34 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import $ from 'jquery';
 import Popper from 'popper.js';
 import React from 'react';
-import psychiatristImg from "../images/Psychiatrist.jpg"
-import "./css/home.css"
+import "./css/home.css";
+import Card from "./Card.jsx";
 import {Link} from "react-router-dom";
 
 function Offers(){
-    return (  <section id="pricing">
+    return (  <section id="offers">
 
-    <h2>What do we offer</h2>
-    <p>Make a card component for these cards</p>
-    
+    <h2 className='offerHeading'>What do we offer</h2>
+    <p>We offer these types of Humanistic, Psychoanalysis and Psychodynamic therapies</p>
     <div class="row">
+        <Card
+            title= "Existential therapy"
+            content =" To help the patient find meaning and purpose in their lives. It seeks to end the fear of the unknown." 
+        />
 
+        <Card
+            title= "Couple therapy"
+            content ="Counseling for couples who are in a relationship, married or not. It's often referred to as marriage counseling." 
+        />
 
-        <div class="pricing-column col-lg-6 col-md-6">
-
-            <div class="card" >
-                <div class="card-body">
-                    <h2 class="card-title">Al-qaeeda training</h2>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="pricing-column col-lg-6 col-md-6">
-
-            <div class="card" >
-                <div class="card-body">
-                    <h2 class="card-title">Anti-BTS training</h2>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="pricing-column col-lg-6 col-md-6">
-
-            <div class="card" >
-                <div class="card-body">
-                    <h2 class="card-title">Couples Divorcing</h2>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="pricing-column col-lg-6 col-md-6">
-    
-            <div class="card" >
-                <div class="card-body">
-                    <h2 class="card-title">Depression Therapy</h2>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
-                </div>
-            </div>
-    
-        </div>    
+        <Card
+            title= "Cognitive Behavioral Therapy (CBT)"
+            content ="Helps an individual identify and change negative thoughts and associated behaviors." 
+        />
+        <Card
+            title= "Domestic violence Counseling and Therapy"
+            content ="A form of therapy that may be beneficial for survivors of domestic abuse." 
+        />
 
     </div>
 

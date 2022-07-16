@@ -6,11 +6,20 @@ import { SidebarData } from './SidebarData';
 import './Navbar.css';
 import { IconContext } from 'react-icons';
 import logo from "./images/logo_mh.svg";
-
-function Navbar() {
+import {auth} from '../firebase-config.js';
+import {signOut} from "firebase/auth";
+function Navbar({isAuth,setIsAuth}) {
+  
   const [sidebar, setSidebar] = useState(false);
-
   const showSidebar = () => setSidebar(!sidebar);
+  
+  const signUserOut = () =>{
+  signOut(auth).then(()=>{
+    localStorage.clear();
+    setIsAuth(false);
+    window.location.pathname="/login";
+    });
+  };
 
   return (
     <>
@@ -23,11 +32,11 @@ function Navbar() {
          <img src={logo} alt="" />
         </Link>
 
+        
 
-        <button className='btn btn-primary create'>Create Account</button>
+        {!isAuth ? <Link to="/login"> <button className='btn btn-primary create'>Create Account</button> </Link>:<button className='btn btn-primary create' onClick={signUserOut}>Log Out</button>}
         </div>
-
-
+        
         <navi className={sidebar ? 'navi-menu active' : 'navi-menu'}>
           <ul className='navi-menu-items' onClick={showSidebar}>
             <li className='navibar-toggle'>

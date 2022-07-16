@@ -7,18 +7,52 @@
     padding: 10% 10% 7%;
 }  
 .topContainer  {
-    background-color: #F2BA2C;
+    color: white;
+    background-color: #fcb400fa;
 }
-.topContainer img {
-    width: 200px;
-    height: 200px;
-}
+
 .topContainer p {
     padding:30px 0 0;
 }
 .topContainer .btn {
-   margin: 50px 30px;
+   margin: 50px 15px;
    border-radius: 10px;
+}
+.top-img{
+    width: 90%;
+    border-radius: 30px 0 30px 0;
+}
+ 
+.offerHeading{
+    font-size: 2.5rem;
+    padding: 10px;
+    font-weight:600;
+}
+.card{
+    margin: 7%;
+    box-shadow: 0 2px 5px  #ccc;
+    border-radius: 30px;
+}
+
+.card h3{
+    font-weight: 600;
+}
+.card p{
+    padding: 10px 0;
+}
+.card .btn{
+    background-color: #f9b60dfa;
+    border-radius: 50px;
+    border: 0;
+    box-shadow: none;
+    color: rgb(255, 255, 255);
+}
+
+.share{
+    text-align: center;
+    color: white;
+    padding: 2rem;
+    background-color: #F2BA2C;
 }
 
 #pricing{

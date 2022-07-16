@@ -10,6 +10,7 @@ function Share(){
     return (<div className="share">
         <h1>It's okay to Share!</h1>
         <h3>HAjoh  shdio dooudfh  ooi f od ofhaod so fodsa fhoahdso hof dsohaosdf  ahodf oasdfluaih uifhadsf h</h3>
+        <h3>HAjoh  shdio dooudfh  ooi f od ofhaod so fodsa fhoahdso hof dsohaosdf  ahodf oasdfluaih uifhadsf h</h3>
     </div>)
 }
 

@@ -8,7 +8,7 @@ import Card from "./Card.jsx";
 import {Link} from "react-router-dom";
 
 function Offers(){
-    return (  <section id="pricing">
+    return (  <section id="offers">
 
     <h2 className='offerHeading'>What do we offer</h2>
     <p>We offer these types of Humanistic, Psychoanalysis and Psychodynamic therapies</p>
